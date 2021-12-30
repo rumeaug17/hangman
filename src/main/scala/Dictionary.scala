@@ -10,26 +10,56 @@ object Dictionary:
       "plusieurs",
       "inconnu",
       "traverser",
-      "déversoir"
+      "déversoir",
+      "plus",
+      "petit",
+      "grand",
+      "armoire",
+      "tombe",
+      "estragon",
+      "escargot",
+      "maison",
+      "ristourne",
+      "apparaître",
+      "apprendre",
+      "journée",
+      "journal",
+      "ordinateur",
+      "lire",
+      "terre",
+      "soleil",
+      "cheval",
+      "chat",
+      "chien",
+      "asperge",
+      "pruneaux",
+      "zest",
+      "vidange",
+      "voiture",
+      "fusée",
+      "pluriel",
+      "politique",
+      "amours",
+      "jeux"
     )
 
   lazy val hangmanStages = List(
     """
       #   --------
       #   |      |
-      #   |      
-      #   |    
-      #   |      
-      #   |     
+      #   |
+      #   |
+      #   |
+      #   |
       #   -
       #""".stripMargin('#'),
     """
       #   --------
       #   |      |
       #   |      0
-      #   |    
-      #   |      
-      #   |     
+      #   |
+      #   |
+      #   |
       #   -
       #""".stripMargin('#'),
     """
@@ -38,7 +68,7 @@ object Dictionary:
       #   |      0
       #   |      |
       #   |      |
-      #   |     
+      #   |
       #   -
       #""".stripMargin('#'),
     """
@@ -47,7 +77,7 @@ object Dictionary:
       #   |      0
       #   |     \|
       #   |      |
-      #   |     
+      #   |
       #   -
       #""".stripMargin('#'),
     """
@@ -56,7 +86,7 @@ object Dictionary:
       #   |      0
       #   |     \|/
       #   |      |
-      #   |     
+      #   |
       #   -
       #""".stripMargin('#'),
     """
