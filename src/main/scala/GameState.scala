@@ -9,6 +9,15 @@ case class GameState private(name : Name, guesses : Set[Guess], word : Word) :
 
   def addGuess(guess : Guess) : GameState = new GameState(name, guesses + guess, word)
 
+  def result(guess : Guess, newGameState : GameState) : GuessResult =
+    if guesses.contains(guess) then GuessResult.Unchanged
+    else
+      if newGameState.isPlayerWon then GuessResult.Won
+      else if newGameState.isPlayerLost then GuessResult.Lost
+      else if word.contains(guess.char) then GuessResult.Correct
+      else
+        GuessResult.Incorrect
+
 end GameState
 
 object GameState:
