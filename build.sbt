@@ -10,7 +10,6 @@ ThisBuild / libraryDependencies ++= Seq(
 
 ThisBuild / scalacOptions ++= Seq(
   "-deprecation",
-  "-encoding", "UTF-8",
   "-feature",
   "-unchecked"
 )
